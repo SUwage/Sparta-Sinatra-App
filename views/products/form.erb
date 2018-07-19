@@ -1,0 +1,25 @@
+<form class="" action="/<%= @product.id%>" method="POST">
+
+  <div class="">
+  <label>Name</label>
+  <input type="text" name="name" placeholder="Enter the products name" value="<%= @product.name %>">
+  </div>
+
+  <div class="">
+  <label>Description</label>
+  <textarea name="description" placeholder="Enter the details of the product"><%= @product.description %></textarea>
+  </div>
+
+  <div class="">
+  <label>Price</label>
+  <input type="text" name="price" placeholder="Enter the products Price" value="<%= @product.price %>">
+  </div>
+
+  <div class="">
+  <input type="submit" name="" value="Save Product">
+  </div>
+
+  <% if(@product.id != "") %>
+    <input type="hidden" name="_method" value="PUT">
+  <% end %>
+</form>

@@ -1,0 +1,12 @@
+<h1><%= @product.name %></h1>
+	<p><%= @product.description %></p>
+	<p><%= @product.price %></p>
+
+	<form class="" action="/<%= @product.id%>" method="POST">
+			<input type="hidden" name="_method" value="DELETE">
+		  <input type="submit" name="" value="Delete">
+	</form>
+
+  <form class="" action="/<%= @product.id%>/edit" method="GET">
+      <input type="submit" name="" value="Edit">
+  </form>
