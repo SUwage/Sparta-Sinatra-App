@@ -2,7 +2,7 @@ class Product
   attr_accessor :id, :name, :description, :price
 
   def self.open_connection
-    conn = PG.connect(dbname: "websitedb", user: "postgres", password: "S07792628167s")
+    conn = PG.connect(dbname: "websitedb", user: "postgres", password: "")
   end
 
   def self.all
